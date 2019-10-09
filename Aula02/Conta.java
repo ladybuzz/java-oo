@@ -1,6 +1,23 @@
 class Conta{
 	String titular; //Variável de instância
-	int agencia;
+	String agencia;
 	int numero;
 	double saldo;
+	String dataDeAbertura;
+
+	void saca(double valor){
+		this.saldo-=valor;
+	}
+
+	void deposita(double valor){
+		this.saldo+=valor;
+	}
+
+	double calculaRendimento(){
+		return this.saldo*0.1;
+	}
+
+	String pegaDadosConta(){
+		return "Ag.: "+ this.agencia+" - Conta: "+ this.numero;
+	}
 }
