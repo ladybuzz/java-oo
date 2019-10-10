@@ -14,5 +14,7 @@ class TestaConta{
 
 		double rend = c1.calculaRendimento();
 	System.out.println(rend);
+
+	System.out.println(c1.recuperaDadosParaImpressao());
 	}
 }

@@ -20,4 +20,8 @@ class Conta{
 	String pegaDadosConta(){
 		return "Ag.: "+ this.agencia+" - Conta: "+ this.numero;
 	}
+
+	String recuperaDadosParaImpressao(){
+		return "Titular: "+this.titular+"\nAg.: "+this.agencia+"\nConta: "+ this.numero+"\nData de Abertura: "+this.dataDeAbertura +"\nSaldo: "+this.saldo;
+	}
 }
